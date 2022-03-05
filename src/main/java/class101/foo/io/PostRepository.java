@@ -6,7 +6,6 @@ import java.util.List;
 
 
 @Repository
-public interface PostRepository extends ElasticsearchRepository<Post, Long> {
+public interface PostRepository extends ElasticsearchRepository<Post, String> {
     List<Post> findByContent(String content);
-
 }
